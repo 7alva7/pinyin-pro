@@ -9,19 +9,6 @@
 - [@pinyin-pro/data/chars.json](https://github.com/zh-lx/pinyin-pro/blob/main/packages/data/json/chars.json): 部分补充生僻字字典(gzip 压缩后大概 0.1KB)
 - [@pinyin-pro/data/buddhist.json](https://github.com/zh-lx/pinyin-pro/blob/main/packages/data/json/buddhist.json): 佛经（佛教典籍）专用拼音词典（128 条，opt-in）
 
-> **读音标准说明**：`buddhist.json` 采用**佛门传统读音**，逐条依据台湾教育部《重编国语辞典修订本》
-> (https://dict.revised.moe.edu.tw/) 与 DDB（buddhism-dict.net）核验，并配有语料验证脚本。
-> 与大陆《普通话异读词审音表》(2016 修订稿) 存在已知分歧，故本词典仅作 opt-in 使用，绝不并入通用词库：
->
-> | 词 | 本词典 | 审音表 | 说明 |
-> |---|---|---|---|
-> | 大乘/小乘/上乘 | shèng | chéng | 审音表 2016 修订稿将「大乘」列为 chéng 音例词 |
-> | 行愿/本行 | hèng | xíng | 审音表「行」统读 xíng |
-> | 迦叶/迦葉 | shè | yè | 审音表「叶」统读 yè |
->
-> 单字级别的强制读音（如 相→xiàng、於→yú）为佛经语料特化启发式，
-> `addDict` 对单字仅追加读音而非强制，故不纳入本词典；需要时请用 `customPinyin` 自行注入。
-
 ## 🔨 安装
 
 选择合适的包管理器
